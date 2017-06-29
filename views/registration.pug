@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+    body
+        form(method='post', action='/registration')
+            .form-group
+                input#pseudo.form-control(type='text', placeholder='Saisissez votre pseudo', name='pseudo')
+                input#email.form-control(type='email', placeholder='Saisissez votre adresse email', name='email')
+                input#email_confirm.form-control(type='email', placeholder='Confirmez votre adresse email', name='email_confirm')
+            button.btn.btn-block.btn-default(type='submit') Envoyer
